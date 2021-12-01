@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"),
+    url("../Assets/font/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Myriad Pro Bold"),
+    url("../Assets/font/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+.main-header {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  .About-wrapper {
+    position: relative;
+    p {
+      width: 60%;
+      margin: 2rem 0rem;
+      font-size: 1.22rem;
+      span {
+        font-family: "Myriad Pro Bold";
+        font-weight: 900;
+      }
+    }
+    h1 {
+      font-family: "Myriad Pro Bold";
+      font-size: 4rem;
+    }
+  }
+  .About-wrapper::after {
+    content: "";
+    position: absolute;
+    background: url("../Assets/About.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    top: -1%;
+    height: 100vh;
+    left: 45%;
+    z-index: -2;
+    transform: scale(0.75);
+  }
+}
+
+footer {
+  background: #fafafa;
+  margin-top: 13.5rem;
+}
+
+@media (max-width: 1080px) {
+  body {
+    overflow-x: hidden;
+  }
+  .main-header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    padding: 1rem ;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    .About-wrapper {
+      position: relative;
+      p {
+        width: 100%;
+        margin: 2rem 0rem;
+        font-size: 1.1rem;
+        span {
+          font-family: "Myriad Pro Bold";
+          font-weight: 900;
+        }
+      }
+      h1 {
+        font-family: "Myriad Pro Bold";
+        font-size: 2.79rem;
+      }
+    }
+    .About-wrapper::after {
+      content: "";
+      position: absolute;
+      background: url("../Assets/About.png") no-repeat;
+      height: 100%;
+      width: 100%;
+      top: 72%;
+      height: 100vh;
+      left: 24%;
+      z-index: -2;
+      transform: scale(60%);
+    }
+  }
+  footer {
+    background: #fafafa;
+    margin-top:25.5rem;
+    padding-top: 4rem;
+  }
+}
